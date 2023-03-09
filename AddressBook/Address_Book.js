@@ -27,4 +27,14 @@ function deleteContact(firstName, lastName) {
     } else {
       console.log("Contact Does Not Exist");
     }
+}
+
+//UC-06----> Function to count the contacts in the array
+function getCountOfContacts(count) {
+    count += 1;
+    return count;
   }
+  console.log(addressBookArray);
+  console.log(
+    "\nCount of Contacts : " + addressBookArray.reduce(getCountOfContacts, 0)
+  );
