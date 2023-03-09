@@ -155,5 +155,6 @@ function getCountOfContacts(count) {
       firstPerson.state.localeCompare(secondPerson.state)
     );
     console.log(addressBookArray);
-  }
+ 
+}
  
