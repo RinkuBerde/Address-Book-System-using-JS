@@ -8,3 +8,10 @@ const email = RegExp("^[a-zA-Z]+[a-zA-Z0-9]*[- . + _]?[a-zA-Z0-9]+[@]{1}[a-z0-9]
 
 // Using array to store the contacts.
 let addressBookArray = new Array();
+
+//Function to check if the contact exists in array.
+function contactExists(firstName, lastName) {
+    return addressBookArray.some(
+      (contact) => contact.firstName == firstName && contact.lastName == lastName
+    );
+  }
